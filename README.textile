@@ -9,10 +9,16 @@ vationsprozesses der Atizo AG getestet und gewinnbringend eingesetzt werden soll
 API ermöglicht Atizo und auch Dritten eine effektivere und effizientere Nutzung von nutzer-
 generierten Inhalten.
 
+Example: "kti.atizo.org":http://kti.atizo.org/
+
+h2. Docs
+
+See "Wiki Pages":https://github.com/atizo/kluster/wiki
+
 h2. License
 
 See LICENSE.
 
 h3. Contact
 
-Visit https://www.atizo.com/platform/contact/
+Visit "atizo.com/contact/":https://www.atizo.com/platform/contact/
