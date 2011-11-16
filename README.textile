@@ -11,6 +11,13 @@ h2. Docs
 
 See "Wiki Pages":https://github.com/atizo/kluster/wiki
 
+h2. Project Memebers
+
+* "HSG":http://www.unisg.ch/
+* "Universität Zürich":http://www.uzh.ch
+* "Zürcher Hochschule für Angewandte Wissenschaften":http://www.zhaw.ch/
+* "Atizo AG":http://www.atizo.com
+
 h2. License
 
 See LICENSE.
