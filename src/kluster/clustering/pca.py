@@ -3,7 +3,7 @@
 #
 # Kluster - A clustering Web Service
 #
-# Copyright (C) 2011 Atizo AG and individual contributors (see AUTHORS).
+# Copyright (C) 2011 Thomas Niederberger and individual contributors (see AUTHORS).
 # 
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
