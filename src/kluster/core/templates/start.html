@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+{% comment %}
+Kluster - A clustering Web Service
+
+Copyright (C) 2011 Atizo AG and individual contributors (see AUTHORS).
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+{% endcomment %}
+
+{% block breadcrumbs %}{% endblock %}
+
+{% block content %}
+
+<p>
+Ziel dieses Projektes ist die Optimierung der Phase der Ideengenerierung im Innovationsprozess. 
+Konkret soll eine Open-Source Software-API zur Erfassung, Klassifikation und Visualisierung von nutzergenerierten Inhalten (Ideen) entwickelt werden, 
+die im Rahmen des Innovationsprozesses der Atizo AG getestet und gewinnbringend eingesetzt werden soll. 
+Diese API ermöglicht Atizo und auch Dritten eine effektivere und effizientere Nutzung von nutzergenerierten Inhalten.
+</p>
+
+<div class="spacer-20"></div>
+
+<div class="quaders">
+  {% for method in methods %}
+      <a href="{{method.url}}">
+          <div class="quader"">
+                <h3>{{method.title}}</h3>
+                {{method.text}}
+          </div>
+      </a>
+  {% endfor %}  
+</div>
+
+{% endblock %}

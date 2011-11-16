@@ -1,0 +1,181 @@
+/*
+Kluster - A clustering Web Service
+
+Copyright (C) 2011 Atizo AG and individual contributors (see AUTHORS).
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
+
+input {
+	color: $font-dark;
+}
+button,
+input, .ui-widget input, 
+textarea, .ui-widget textarea {
+	@include font-normal;
+	font-family: inherit;
+}
+input[type=text]:focus,
+input[type=password]:focus,
+textarea:focus {
+	outline: none;
+	border-color: rgba(82, 168, 236, .75) !important;
+	@include single-box-shadow(rgba(82, 168, 236, .5), 0, 0, 8px);	
+}
+form {
+	ul {
+		margin: 0;
+		margin-bottom:$space-20;
+	}
+	ul li {
+		list-style:none;
+	}
+}
+form div.error, div.error-box {
+	@include border-radius($corner-small);
+	padding: 3px 5px;
+	color: #801b1b;
+	border: 1px solid #e5a3a3;
+	background-color: #ffcfcf;
+	margin-top: 3px;
+	ul {
+		margin: 0px;
+		li {
+			list-style: none;
+		}
+	}
+}
+
+form.common-form {
+	background-color: $light-gray;
+	padding: $space-20;
+	@include border-radius($corner-small);
+	&.transparent{
+		background-color:  transparent;
+	}
+	&.content-right {
+		padding: $space-20 $space-20 $space-20 0px;
+		select {
+			width: 160px;
+		}
+	}
+	&.clear {	
+		background-color: transparent;
+		padding: 0;
+		@include border-radius(0px);
+	}
+	input[type="text"], input[type="password"], textarea, select, checkbox {
+		border: 1px solid $medium-gray;
+		padding: 4px 2px;
+		background-color: $site-bg;
+	}
+	input[type="text"], input[type="password"], textarea, select {
+		@include border-radius($corner-small);
+	}
+	input[type="button"].right {
+		@include float-right;
+	}
+	input[disabled="disabled"], input.disabled {
+		background-color: #EEE;
+	}
+	select {
+		padding: 4px 5px;
+	}
+	input[type="checkbox"] {
+		margin-left: 0px;
+		padding-left: 0px;
+	}
+	div.row {
+		margin-top: $space-10;
+		&.first {
+			margin-top: 0px;
+		}
+	}
+	div.top-label {
+		padding-bottom: 3px;
+		font-weight: bold;
+	}
+	div.help-text {
+		padding-bottom: 3px;
+		@include font-small;
+	}
+	div.checkbox {
+		@include clearfix;
+		input[type="checkbox"] {
+			@include float-left;
+		}
+		div.label-text {
+			padding-left: 3px;
+			@include float-left;
+			
+			div.title {
+				font-weight: bold;
+			}
+		
+		}
+	}
+	fieldset {
+		margin-bottom: $space-20;
+		&.last {
+			margin-bottom: 0px;
+		}
+	}
+	&.large {
+		input[type="text"], 
+		input[type="password"], 
+		textarea, select, checkbox {
+			width: 100%
+		}
+		div.error {
+			width: 460px - 10px;
+		}
+		div.meta {
+			width: 460px;
+		}
+		select {
+			width: 100%
+		}
+	}
+	&.small {
+		@include font-small;
+		input[type="text"], 
+		input[type="password"], 
+		textarea, 
+		select, 
+		checkbox {
+			width: 230px - 4px;
+		}
+		fieldset {
+			margin-bottom: $space-10;
+			&.last {
+				margin-bottom: 0px;
+			}
+		}
+		div.row {
+			margin-top: $space-10 / 2;
+			&.first {
+				margin-top: 0px;
+			}
+		}
+		div.error {
+			width: 230px - 10px;
+		}
+		div.meta {
+			width: 230px;
+		}
+	}
+	p.meta {
+		margin-bottom: 0px;
+	}
+}

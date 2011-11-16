@@ -1,0 +1,25 @@
+## django extensions 
+django==1.3.1
+django-debug-toolbar==0.8.5
+django-extensions==0.7.1
+django-rosetta==0.6.2
+django-admin-tools==0.4.0
+FeedParser==5.0.1
+-e git://github.com/atizo/django-piston.git@1af9ea6bec#egg=piston
+-e git://github.com/atizo/djangojames.git#egg=djangojames
+-e git://github.com/clintecker/python-googleanalytics.git@aee9adf9cbb494890626ba2fa22827747e0b1231#egg=python-googleanalytic
+textile
+
+## background jobs
+amqplib==1.0.2
+carrot==0.10.7
+celery==2.3.3
+django-celery==2.3.3
+django-picklefield==0.1.9
+multiprocessing==2.6.2.1
+
+## Misc
+python-dateutil<2.0 
+matplotlib==1.0.1
+
+

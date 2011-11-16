@@ -1,0 +1,59 @@
+/*
+Kluster - A clustering Web Service
+
+Copyright (C) 2011 Atizo AG and individual contributors (see AUTHORS).
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
+
+@mixin font-defaults {
+    font-family: 'PTSans', $font-fallback-stack;
+    line-height: normal;
+    font-style: normal;
+    letter-spacing: 0;
+    word-spacing: 0;
+}
+
+/* normal */
+@mixin font-normal {
+    font-weight: normal;
+    font-size: $font-normal-size;
+    line-height: $font-normal-size + 4px;
+}
+
+/* small */
+@mixin font-small {
+    font-size: $font-small-size;
+    line-height: $font-small-size + 7px;
+}
+
+/* topnav */
+@mixin font-topnav {
+    font-size: $font-topnav-size;
+    line-height: $font-topnav-size + 7px;
+}
+
+/* large */
+@mixin font-large {
+    font-weight: bold;
+    font-size: $font-large-size;
+    line-height: $font-large-size + 5px;
+}
+
+/* xlarge */
+@mixin font-xlarge {
+    font-family: 'AdelleBasicBold', $font-fallback-stack;
+    font-size: $font-xlarge-size;
+    line-height: $font-xlarge-size;
+}

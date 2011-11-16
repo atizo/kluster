@@ -1,0 +1,11 @@
+/.project
+/.pydevproject
+*.pyc
+settings_local.py
+kluster.db
+kluster.log
+*.prefs
+.sass-cache
+/src/kluster/static/
+*.*~
+/src/kluster/media/downloads/*

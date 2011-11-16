@@ -1,0 +1,148 @@
+/*
+Kluster - A clustering Web Service
+
+Copyright (C) 2011 Atizo AG and individual contributors (see AUTHORS).
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
+
+body {
+  @include font-defaults;
+  @include font-normal;
+  color: $font-dark;
+  margin-left: auto;
+  margin-right: auto;
+  width: 960px;
+}
+
+h1 {
+    @include font-large;
+}
+
+h2 {
+    @include font-topnav;
+}
+
+h1, h2, h3, h4, h5 {
+    font-weight: bold;
+    padding-bottom: 0.5em;
+}
+
+pre,code {
+    margin: 9px;
+    padding: 9px;
+    background-color: $light-gray;
+    border-style:solid;
+    border-width:1px;
+    border-color: $medium-gray;
+    
+}
+
+#footer {
+    border-top-color: $light-gray;
+    border-top-style: solid;
+    border-top-width: 1px;
+    @include font-small;
+}
+
+p {
+    padding-top: 1em;
+}
+
+div.spacer-10 {
+  height: $space-10;
+  width: 100%;
+  clear: both;
+}
+div.spacer-20 {
+  height: $space-20;
+  width: 100%;
+  clear: both;
+}
+div.spacer-30 {
+  height: $space-30;
+  width: 100%;
+  clear: both;
+}
+
+div.quote, blockquote {
+    background-color: $medium-gray;
+    @include border-radius($corner-small);
+    color: white;
+    padding: 12px; 
+
+    a {
+        color: white;
+        text-decoration: underline;
+    }
+    
+    div.blockquote { 
+        margin: 0px; 
+        quotes: "\201C" "\201D"; 
+        color: white;
+    }
+    
+    div.blockquote:before { 
+        content: open-quote; 
+        font-weight: bold; 
+    }
+    div.blockquote:after { 
+        content: close-quote;
+        font-weight: bold; 
+    }
+}
+
+blockquote {
+    background-color: $medium-gray;
+    @include border-radius($corner-small);
+    color: white;
+    padding: 12px; 
+    margin: 0px; 
+    quotes: "\201C" "\201D"; 
+    color: white;
+    
+    p{
+        padding-top: 0;    
+    }
+    
+    a {
+        color: white;
+        text-decoration: underline;
+    }
+    
+}
+
+blockquote p:before { 
+    content: open-quote; 
+    font-weight: bold; 
+}
+blockquote p:after { 
+    content: close-quote;
+    font-weight: bold; 
+}
+
+div.hr {
+  border-bottom: 1px solid $light-gray;
+  margin-bottom: $space-20;
+}
+
+.meta-text {
+     @include font-small;
+}
+
+div.loader {
+    background: url(/static/img/loader.gif) no-repeat 5px 4px;
+    height: 30px;
+    width: 100%;
+}

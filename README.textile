@@ -1,0 +1,18 @@
+h1. Kluster
+
+h2. Overview
+
+Ziel dieses Projektes ist die Optimierung der Phase der Ideengenerierung im Innovationspro-
+zess. Konkret soll eine Open-Source Software-API zur Erfassung, Klassifikation und Visuali-
+sierung von nutzergenerierten Inhalten (Ideen) entwickelt werden, die im Rahmen des Inno-
+vationsprozesses der Atizo AG getestet und gewinnbringend eingesetzt werden soll. Diese
+API ermöglicht Atizo und auch Dritten eine effektivere und effizientere Nutzung von nutzer-
+generierten Inhalten.
+
+h2. License
+
+See LICENSE.
+
+h3. Contact
+
+Visit https://www.atizo.com/platform/contact/

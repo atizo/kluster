@@ -1,0 +1,23 @@
+{% extends "admin/base_site.html" %}
+{% load i18n %}
+
+{% block extrahead %}
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script> 
+<link rel="stylesheet" href="/static/css/screen.css">
+{% endblock %}   
+
+{% block blockbots %}{% endblock %}
+
+{% block title %}{{STATIC_URL}}{{title}} | Kluster{% endblock %}
+
+{% block branding %}
+<h1 id="site-name">{% trans 'Kluster' %}</h1>
+{% endblock %}
+
+{% block footer %}
+<div id="footer">
+    <a href="/admin">Admin Interface</a> | 
+    <a href="http://www.djangoproject.com/">Powered by Django</a>
+</div>
+{% block js %}{% endblock %}
+{% endblock %}
